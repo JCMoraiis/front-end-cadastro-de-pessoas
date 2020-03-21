@@ -6,6 +6,6 @@ Este projeto foi gerado com a versão 9.0.7 do [Angular CLI] (https://github.com
 
 ## Servidor de desenvolvimento
 
-Execute `ng serve` para um servidor dev. Navegue para `http: // localhost: 4200 /`. O aplicativo será recarregado automaticamente se você alterar qualquer um dos arquivos de origem.
+Execute `ng serve` para um servidor dev. Navegue para `http://localhost:4200/`. O aplicativo será recarregado automaticamente se você alterar qualquer um dos arquivos de origem.
 
 
