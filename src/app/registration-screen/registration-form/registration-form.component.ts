@@ -1,14 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ErrorStateMatcher } from '@angular/material/core';
-import { FormControl, FormGroupDirective, NgForm, Validators, FormBuilder, FormGroup } from '@angular/forms';
-
-/** Error when invalid control is dirty, touched, or submitted. */
-export class MyErrorStateMatcher implements ErrorStateMatcher {
-  isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
-    const isSubmitted = form && form.submitted;
-    return !!(control && control.invalid && (control.dirty || control.touched || isSubmitted));
-  }
-}
+import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 
 interface Sex {
   value: string;
@@ -29,7 +20,6 @@ export class RegistrationFormComponent implements OnInit {
   ];
 
   registrationForm: FormGroup;
-  matcher = new MyErrorStateMatcher();
   maxDate = new Date();
 
   constructor( private formBuilder: FormBuilder ) { }
