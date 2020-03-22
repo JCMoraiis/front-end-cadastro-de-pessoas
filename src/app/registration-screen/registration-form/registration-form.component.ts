@@ -30,6 +30,7 @@ export class RegistrationFormComponent implements OnInit {
 
   registrationForm: FormGroup;
   matcher = new MyErrorStateMatcher();
+  maxDate = new Date();
 
   constructor( private formBuilder: FormBuilder ) { }
 
@@ -42,7 +43,8 @@ export class RegistrationFormComponent implements OnInit {
           Validators.minLength(8)
         ]
       ],
-      email: ['', Validators.email ]
+      email: ['', Validators.email ],
+      dateOfBirth: ['', Validators.required]
     });
   }
  }
