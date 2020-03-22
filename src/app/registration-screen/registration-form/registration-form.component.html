@@ -17,4 +17,19 @@
 
   </mat-form-field>
 
+  <!--Select de sexo-->
+  <mat-form-field>
+
+    <mat-label>Sexo</mat-label>
+
+    <mat-select>
+
+      <mat-option *ngFor="let sex of genders" [value]="sex.value">
+        {{sex.viewValue}}
+      </mat-option>
+
+    </mat-select>
+
+  </mat-form-field>
+
 </form>

@@ -10,12 +10,23 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
   }
 }
 
+interface Sex {
+  value: string;
+  viewValue: string;
+}
+
 @Component({
   selector: 'app-registration-form',
   templateUrl: './registration-form.component.html',
   styleUrls: ['./registration-form.component.scss']
 })
 export class RegistrationFormComponent implements OnInit {
+
+  genders: Sex[] = [
+    {value: 'masculino', viewValue: 'Masculino'},
+    {value: 'feminino', viewValue: 'Feminino'},
+    {value: 'outros', viewValue: 'Outros'}
+  ];
 
   registrationForm: FormGroup;
   matcher = new MyErrorStateMatcher();
