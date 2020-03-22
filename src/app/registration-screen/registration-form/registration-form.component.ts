@@ -34,7 +34,9 @@ export class RegistrationFormComponent implements OnInit {
         ]
       ],
       email: ['', Validators.email ],
-      dateOfBirth: ['', Validators.required]
+      dateOfBirth: ['', Validators.required],
+      naturalness: ['', Validators.minLength(2)],
+      nationality: ['', Validators.minLength(2)]
     });
   }
  }

@@ -63,4 +63,46 @@
 
   </mat-form-field>
 
+  <!--Input naturalidade-->
+  <mat-form-field class="registration-form-full-width">
+
+    <mat-label>Naturalidade</mat-label>
+
+    <input matInput formControlName="naturalness">
+    <mat-hint *ngIf="!registrationForm.get('naturalness').value">Digite sua naturalidade</mat-hint>
+
+    <mat-error *ngIf="registrationForm.get('naturalness').errors?.minlength">
+      Por favor, digite uma naturalidade válida.
+    </mat-error>
+
+  </mat-form-field>
+
+    <!--Input naturalidade-->
+  <mat-form-field class="registration-form-full-width">
+
+    <mat-label>Naturalidade</mat-label>
+
+    <input matInput formControlName="naturalness">
+    <mat-hint *ngIf="!registrationForm.get('naturalness').value">Digite sua naturalidade</mat-hint>
+
+    <mat-error *ngIf="registrationForm.get('naturalness').errors?.minlength">
+      Por favor, digite uma naturalidade válida.
+    </mat-error>
+
+  </mat-form-field>
+
+  <!--Input nacionalidade-->
+  <mat-form-field class="registration-form-full-width">
+
+    <mat-label>Nacionalidade</mat-label>
+
+    <input matInput formControlName="nationality">
+    <mat-hint *ngIf="!registrationForm.get('nationality').value">Digite sua nacionalidade</mat-hint>
+
+    <mat-error *ngIf="registrationForm.get('nationality').errors?.minlength">
+      Por favor, digite uma nacionalidade válida.
+    </mat-error>
+
+  </mat-form-field>
+
 </form>
