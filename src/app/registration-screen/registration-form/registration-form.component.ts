@@ -33,10 +33,16 @@ export class RegistrationFormComponent implements OnInit {
           Validators.minLength(8)
         ]
       ],
-      email: ['', Validators.email ],
-      dateOfBirth: ['', Validators.required],
-      naturalness: ['', Validators.minLength(2)],
-      nationality: ['', Validators.minLength(2)]
+      email:        ['', Validators.email ],
+      dateOfBirth:  ['', Validators.required],
+      naturalness:  ['', Validators.minLength(2)],
+      nationality:  ['', Validators.minLength(2)],
+      CPF:  ['',
+        [
+        Validators.required,
+        Validators.pattern(/^[0-9]{3}\.?[0-9]{3}\.?[0-9]{3}\-?[0-9]{2}$/)
+        ]
+      ]
     });
   }
  }
