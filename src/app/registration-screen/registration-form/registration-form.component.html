@@ -1,10 +1,10 @@
 <form [formGroup]="registrationForm" class="registration-form">
-<!--Input de nome-->
+  <!--Input de nome-->
   <mat-form-field class="registration-form-full-width">
 
     <mat-label>Nome</mat-label>
 
-    <input matInput  formControlName="name" [errorStateMatcher]="matcher">
+    <input matInput formControlName="name" [errorStateMatcher]="matcher">
     <mat-hint>Digite seu nome!</mat-hint>
 
     <mat-error *ngIf="registrationForm.get('name').errors?.minlength">
@@ -29,6 +29,20 @@
       </mat-option>
 
     </mat-select>
+
+  </mat-form-field>
+
+  <!--Input de e-mail-->
+  <mat-form-field class="registration-form-full-width">
+
+    <mat-label>Email</mat-label>
+
+    <input matInput formControlName="email" [errorStateMatcher]="matcher" placeholder="Ex. pat@example.com">
+    <mat-hint>Digite seu e-mail!</mat-hint>
+
+    <mat-error *ngIf="registrationForm.get('email').errors?.email">
+      Por favor, digite um e-mail válido.
+    </mat-error>
 
   </mat-form-field>
 

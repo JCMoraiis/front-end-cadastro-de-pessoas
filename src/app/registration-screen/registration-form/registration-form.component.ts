@@ -41,7 +41,8 @@ export class RegistrationFormComponent implements OnInit {
           Validators.required,
           Validators.minLength(8)
         ]
-      ]
+      ],
+      email: ['', Validators.email ]
     });
   }
  }
