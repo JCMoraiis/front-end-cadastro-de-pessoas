@@ -1,108 +1,124 @@
-<form [formGroup]="registrationForm" class="registration-form">
-  <!--Input de nome-->
-  <mat-form-field class="registration-form-full-width">
+<div class="div-registration-form">
+  <form [formGroup]="registrationForm" class="registration-form">
+    <!--Input de nome-->
+    <div>
+      <mat-form-field class="registration-form-full-width">
 
-    <mat-label>Nome</mat-label>
+        <mat-label>Nome</mat-label>
 
-    <input matInput formControlName="name">
-    <mat-hint *ngIf="!registrationForm.get('name').value">Digite seu nome!</mat-hint>
+        <input matInput formControlName="name">
+        <mat-hint *ngIf="!registrationForm.get('name').value">Digite seu nome!</mat-hint>
 
-    <mat-error *ngIf="registrationForm.get('name').errors?.minlength">
-      Por favor, digite seu nome completo
-    </mat-error>
+        <mat-error *ngIf="registrationForm.get('name').errors?.minlength">
+          Por favor, digite seu nome completo
+        </mat-error>
 
-    <mat-error *ngIf="registrationForm.get('name').errors?.required">
-      Nome é <strong>obrigatório</strong>
-    </mat-error>
+        <mat-error *ngIf="registrationForm.get('name').errors?.required">
+          Nome é <strong>obrigatório</strong>
+        </mat-error>
 
-  </mat-form-field>
+      </mat-form-field>
+    </div>
 
-  <!--Select de sexo-->
-  <mat-form-field>
+    <!--Input CPF-->
+    <div class="inputs">
+      <mat-form-field class="registration-form-full-width">
 
-    <mat-label>Sexo</mat-label>
+        <mat-label>CPF</mat-label>
 
-    <mat-select>
+        <input matInput formControlName="CPF">
+        <mat-hint *ngIf="!registrationForm.get('CPF').value">Digite seu CPF</mat-hint>
 
-      <mat-option *ngFor="let sex of genders" [value]="sex.value">
-        {{sex.viewValue}}
-      </mat-option>
+        <mat-error *ngIf="registrationForm.get('CPF').invalid">
+          Por favor, digite um CPF válido.
+        </mat-error>
 
-    </mat-select>
+      </mat-form-field>
+    </div>
 
-  </mat-form-field>
+    <!--Select de sexo-->
+    <div>
+      <mat-form-field class="registration-form-full-width">
 
-  <!--Input de e-mail-->
-  <mat-form-field class="registration-form-full-width">
+        <mat-label>Sexo</mat-label>
 
-    <mat-label>Email</mat-label>
+        <mat-select>
 
-    <input matInput formControlName="email" placeholder="Ex. pat@example.com">
-    <mat-hint *ngIf="!registrationForm.get('email').value">Digite seu e-mail!</mat-hint>
+          <mat-option *ngFor="let sex of genders" [value]="sex.value">
+            {{sex.viewValue}}
+          </mat-option>
 
-    <mat-error *ngIf="registrationForm.get('email').errors?.email">
-      Por favor, digite um e-mail válido.
-    </mat-error>
+        </mat-select>
 
-  </mat-form-field>
+      </mat-form-field>
+    </div>
 
-<!--Data de nascimento-->
-  <mat-form-field>
+    <!--Data de nascimento-->
+    <div>
+      <mat-form-field class="registration-form-full-width">
 
-    <mat-label>Data de nascimento</mat-label>
+        <mat-label>Data de nascimento</mat-label>
 
-    <input matInput formControlName="dateOfBirth" [max]="maxDate" [matDatepicker]="picker">
+        <input matInput formControlName="dateOfBirth" [max]="maxDate" [matDatepicker]="picker">
 
-    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
 
-    <mat-datepicker #picker></mat-datepicker>
+        <mat-datepicker #picker></mat-datepicker>
 
-    <mat-error *ngIf="registrationForm.get('dateOfBirth').errors?.required">
-      A data de nascimento é <strong>obrigatória</strong>
-    </mat-error>
+        <mat-error *ngIf="registrationForm.get('dateOfBirth').errors?.required">
+          A data de nascimento é <strong>obrigatória</strong>
+        </mat-error>
 
-  </mat-form-field>
+      </mat-form-field>
+    </div>
+
+    <!--Input de e-mail-->
+    <div>
+      <mat-form-field class="registration-form-full-width">
+
+        <mat-label>Email</mat-label>
+
+        <input matInput formControlName="email" placeholder="Ex. pat@example.com">
+        <mat-hint *ngIf="!registrationForm.get('email').value">Digite seu e-mail!</mat-hint>
+
+        <mat-error *ngIf="registrationForm.get('email').errors?.email">
+          Por favor, digite um e-mail válido.
+        </mat-error>
+
+      </mat-form-field>
+    </div>
 
     <!--Input naturalidade-->
-  <mat-form-field class="registration-form-full-width">
+    <div>
+      <mat-form-field class="registration-form-full-width">
 
-    <mat-label>Naturalidade</mat-label>
+        <mat-label>Naturalidade</mat-label>
 
-    <input matInput formControlName="naturalness">
-    <mat-hint *ngIf="!registrationForm.get('naturalness').value">Digite sua naturalidade</mat-hint>
+        <input matInput formControlName="naturalness">
+        <mat-hint *ngIf="!registrationForm.get('naturalness').value">Digite sua naturalidade</mat-hint>
 
-    <mat-error *ngIf="registrationForm.get('naturalness').errors?.minlength">
-      Por favor, digite uma naturalidade válida.
-    </mat-error>
+        <mat-error *ngIf="registrationForm.get('naturalness').errors?.minlength">
+          Por favor, digite uma naturalidade válida.
+        </mat-error>
 
-  </mat-form-field>
+      </mat-form-field>
+    </div>
 
-  <!--Input nacionalidade-->
-  <mat-form-field class="registration-form-full-width">
+    <!--Input nacionalidade-->
+    <div>
+      <mat-form-field class="registration-form-full-width">
 
-    <mat-label>Nacionalidade</mat-label>
+        <mat-label>Nacionalidade</mat-label>
 
-    <input matInput formControlName="nationality">
-    <mat-hint *ngIf="!registrationForm.get('nationality').value">Digite sua nacionalidade</mat-hint>
+        <input matInput formControlName="nationality">
+        <mat-hint *ngIf="!registrationForm.get('nationality').value">Digite sua nacionalidade</mat-hint>
 
-    <mat-error *ngIf="registrationForm.get('nationality').errors?.minlength">
-      Por favor, digite uma nacionalidade válida.
-    </mat-error>
+        <mat-error *ngIf="registrationForm.get('nationality').errors?.minlength">
+          Por favor, digite uma nacionalidade válida.
+        </mat-error>
 
-  </mat-form-field>
+      </mat-form-field>
+    </div>
 
-  <!--Input CPF-->
-  <mat-form-field class="registration-form-full-width">
-
-    <mat-label>CPF</mat-label>
-
-    <input matInput formControlName="CPF">
-    <mat-hint *ngIf="!registrationForm.get('CPF').value">Digite seu CPF</mat-hint>
-
-    <mat-error *ngIf="registrationForm.get('CPF').invalid">
-      Por favor, digite um CPF válido.
-    </mat-error>
-
-  </mat-form-field>
-
-</form>
+  </form>
+</div>

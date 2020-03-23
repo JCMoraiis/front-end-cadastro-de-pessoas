@@ -1,9 +1,21 @@
+.div-registration-form {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .registration-form {
-  min-width: 150px;
-  max-width: 500px;
-  width: 100%;
+  min-width: 30%;
+  max-width: 40%;
+  background-color: rgba(10,23,55,0.03);
+  border-radius: 2%;
+  padding: 2% 3%;
 }
 
 .registration-form-full-width {
   width: 100%;
+  margin-bottom: 1%;
 }
