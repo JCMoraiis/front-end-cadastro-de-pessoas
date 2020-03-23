@@ -19,3 +19,17 @@
   width: 100%;
   margin-bottom: 1%;
 }
+
+.div-save-button {
+  margin-top: 6%;
+}
+
+.save-button {
+  width: 100%;
+  color: white;
+  background-color: rgba(16, 77, 245, 0.822);
+}
+
+.save-button:hover {
+  background-color: rgba(16, 77, 245, 0.9);
+}
