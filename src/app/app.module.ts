@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { RegistrationScreenModule } from './registration-screen/registration-screen.module';
+import { NavebarModule } from './navebar/navebar.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { RegistrationScreenModule } from './registration-screen/registration-scr
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    RegistrationScreenModule
+    RegistrationScreenModule,
+    NavebarModule
   ],
   providers: [],
   bootstrap: [ AppComponent ]

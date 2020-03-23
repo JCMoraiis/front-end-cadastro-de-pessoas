@@ -1,0 +1,13 @@
+.mat-toolbar {
+  background-color: rgba(16, 77, 245, 0.822);
+}
+
+.mat-button {
+  background-color: rgba(16, 77, 245, 0.250);
+  margin-left: 1%;
+  color: whitesmoke;
+}
+
+.mat-button:hover {
+  background-color: rgba(16, 77, 245, 0.500);
+}
