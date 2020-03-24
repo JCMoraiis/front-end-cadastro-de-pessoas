@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { RegistrationScreenModule } from './registration-screen/registration-screen.module';
 import { NavebarModule } from './navebar/navebar.module';
+import { AppRoutingModule } from './app.routing.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NavebarModule } from './navebar/navebar.module';
     BrowserModule,
     BrowserAnimationsModule,
     RegistrationScreenModule,
-    NavebarModule
+    NavebarModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [ AppComponent ]

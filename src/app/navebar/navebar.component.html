@@ -1,5 +1,14 @@
 <mat-toolbar>
-  <button mat-button>CADASTRAR </button>
-  <button mat-button>ATUALIZAR</button>
-  <button mat-button>REMOVER</button>
+
+  <a [routerLink]="['cadastrar']">
+    <button mat-button>CADASTRAR</button>
+  </a>
+
+  <a [routerLink]="['atualizar']">
+    <button mat-button>ATUALIZAR</button>
+  </a>
+
+  <a [routerLink]="['remover']">
+    <button mat-button>REMOVER</button>
+  </a>
 </mat-toolbar>

@@ -2,9 +2,12 @@
   background-color: rgba(16, 77, 245, 0.822);
 }
 
+a {
+  margin-left: 1%;
+}
+
 .mat-button {
   background-color: rgba(16, 77, 245, 0.250);
-  margin-left: 1%;
   color: whitesmoke;
 }
 
