@@ -16,6 +16,7 @@ import { GendersComponent } from '../form-components/genders/genders.component';
 import { DateOfBirthComponent } from '../form-components/date-of-birth/date-of-birth.component';
 import { EmailComponent } from '../form-components/email/email.component';
 import { NaturalnessComponent } from '../form-components/naturalness/naturalness.component';
+import { NationalityComponent } from '../form-components/nationality/nationality.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { NaturalnessComponent } from '../form-components/naturalness/naturalness
     GendersComponent,
     DateOfBirthComponent,
     EmailComponent,
-    NaturalnessComponent
+    NaturalnessComponent,
+    NationalityComponent
   ],
   imports: [
     BrowserModule,

@@ -19,22 +19,6 @@
     <!--Componente de naturalidade-->
     <app-naturalness></app-naturalness>
 
-    <!--Input nacionalidade-->
-    <div>
-      <mat-form-field class="registration-form-full-width">
-
-        <mat-label>Nacionalidade</mat-label>
-
-        <input matInput formControlName="nationality">
-        <mat-hint *ngIf="!registrationForm.get('nationality').value">Digite sua nacionalidade</mat-hint>
-
-        <mat-error *ngIf="registrationForm.get('nationality').errors?.minlength">
-          Por favor, digite uma nacionalidade válida.
-        </mat-error>
-
-      </mat-form-field>
-    </div>
-
     <!--Botão Salvar-->
     <div>
       <button mat-button>SALVAR</button>
