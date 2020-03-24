@@ -3,7 +3,7 @@
 
     <mat-label>Nacionalidade</mat-label>
 
-    <input matInput formControlName="nationality">
+    <input matInput [formControl]="nationality">
     <mat-hint *ngIf="!nationality.value">Digite sua nacionalidade</mat-hint>
 
     <mat-error *ngIf="nationality.errors?.minlength">
