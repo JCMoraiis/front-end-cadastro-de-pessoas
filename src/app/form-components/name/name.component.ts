@@ -4,7 +4,10 @@ import { FormControl, Validators } from '@angular/forms';
 @Component({
   selector: 'app-name',
   templateUrl: 'name.component.html',
-  styleUrls: ['name.component.css']
+  styleUrls: [
+    'name.component.css',
+    '../utils/utils.css'
+  ]
 })
 export class NameComponent {
 

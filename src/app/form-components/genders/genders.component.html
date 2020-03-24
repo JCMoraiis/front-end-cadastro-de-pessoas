@@ -1,0 +1,16 @@
+<!--Select de sexo-->
+<div>
+  <mat-form-field class="registration-form-full-width">
+
+    <mat-label>Sexo</mat-label>
+
+    <mat-select>
+
+      <mat-option *ngFor="let gender of genders" [value]="gender.value">
+        {{gender.viewValue}}
+      </mat-option>
+
+    </mat-select>
+
+  </mat-form-field>
+</div>

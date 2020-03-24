@@ -4,38 +4,11 @@
     <!--Componente de nome-->
     <app-name></app-name>
 
-    <!--Input CPF-->
-    <div class="inputs">
-      <mat-form-field class="registration-form-full-width">
+    <!--Component de CPF-->
+    <app-cpf></app-cpf>
 
-        <mat-label>CPF</mat-label>
-
-        <input matInput formControlName="CPF">
-        <mat-hint *ngIf="!registrationForm.get('CPF').value">Digite seu CPF</mat-hint>
-
-        <mat-error *ngIf="registrationForm.get('CPF').invalid">
-          Por favor, digite um CPF válido.
-        </mat-error>
-
-      </mat-form-field>
-    </div>
-
-    <!--Select de sexo-->
-    <div>
-      <mat-form-field class="registration-form-full-width">
-
-        <mat-label>Sexo</mat-label>
-
-        <mat-select>
-
-          <mat-option *ngFor="let sex of genders" [value]="sex.value">
-            {{sex.viewValue}}
-          </mat-option>
-
-        </mat-select>
-
-      </mat-form-field>
-    </div>
+    <!--Componente de Gêneros-->
+    <app-genders></app-genders>
 
     <!--Data de nascimento-->
     <div>

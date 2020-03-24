@@ -10,12 +10,16 @@ import { MatNativeDateModule} from '@angular/material/core';
 import { MatButtonModule } from '@angular/material/button';
 
 import { RegistrationFormComponent } from './registration-form/registration-form.component';
-import { NameComponent } from '../form-components/name-component/name.component';
+import { NameComponent } from '../form-components/name/name.component';
+import { CpfComponent } from '../form-components/cpf/cpf.component';
+import { GendersComponent } from '../form-components/genders/genders.component';
 
 @NgModule({
   declarations: [
     RegistrationFormComponent,
-    NameComponent
+    NameComponent,
+    CpfComponent,
+    GendersComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,19 @@
+<!--Input de nome-->
+<div>
+  <mat-form-field class="registration-form-full-width">
+
+    <mat-label>Nome</mat-label>
+
+    <input matInput [formControl]="name">
+    <mat-hint *ngIf="!name.value">Digite seu nome!</mat-hint>
+
+    <mat-error *ngIf="name.errors?.minlength">
+      Por favor, digite seu nome completo
+    </mat-error>
+
+    <mat-error *ngIf="name.errors?.required">
+      Nome é <strong>obrigatório</strong>
+    </mat-error>
+
+  </mat-form-field>
+</div>
