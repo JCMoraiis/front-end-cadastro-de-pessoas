@@ -13,21 +13,8 @@
     <!--Componente de data de nascimento-->
     <app-date-of-birth></app-date-of-birth>
 
-    <!--Input de e-mail-->
-    <div>
-      <mat-form-field class="registration-form-full-width">
-
-        <mat-label>Email</mat-label>
-
-        <input matInput formControlName="email" placeholder="Ex. pat@example.com">
-        <mat-hint *ngIf="!registrationForm.get('email').value">Digite seu e-mail!</mat-hint>
-
-        <mat-error *ngIf="registrationForm.get('email').errors?.email">
-          Por favor, digite um e-mail válido.
-        </mat-error>
-
-      </mat-form-field>
-    </div>
+    <!--Componente de email-->
+    <app-email></app-email>
 
     <!--Input naturalidade-->
     <div>

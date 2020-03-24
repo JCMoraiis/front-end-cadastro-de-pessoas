@@ -1,0 +1,15 @@
+<!--Input de e-mail-->
+<div>
+  <mat-form-field class="registration-form-full-width">
+
+    <mat-label>Email</mat-label>
+
+    <input matInput [formControl]="email" placeholder="Ex. pat@example.com">
+    <mat-hint *ngIf="!email.value">Digite seu e-mail!</mat-hint>
+
+    <mat-error *ngIf="email.errors?.email">
+      Por favor, digite um e-mail válido.
+    </mat-error>
+
+  </mat-form-field>
+</div>
