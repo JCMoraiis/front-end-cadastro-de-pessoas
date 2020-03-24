@@ -16,7 +16,6 @@ export class RegistrationFormComponent implements OnInit {
 
     this.registrationForm = this.formBuilder.group({
       email:        ['', Validators.email ],
-      naturalness:  ['', Validators.minLength(2)],
       nationality:  ['', Validators.minLength(2)],
     });
   }

@@ -1,0 +1,15 @@
+<!--Input naturalidade-->
+<div>
+  <mat-form-field class="registration-form-full-width">
+
+    <mat-label>Naturalidade</mat-label>
+
+    <input matInput [formControl]="naturalness">
+    <mat-hint *ngIf="!naturalness.value">Digite sua naturalidade</mat-hint>
+
+    <mat-error *ngIf="naturalness.errors?.minlength">
+      Por favor, digite uma naturalidade válida.
+    </mat-error>
+
+  </mat-form-field>
+</div>

@@ -16,21 +16,8 @@
     <!--Componente de email-->
     <app-email></app-email>
 
-    <!--Input naturalidade-->
-    <div>
-      <mat-form-field class="registration-form-full-width">
-
-        <mat-label>Naturalidade</mat-label>
-
-        <input matInput formControlName="naturalness">
-        <mat-hint *ngIf="!registrationForm.get('naturalness').value">Digite sua naturalidade</mat-hint>
-
-        <mat-error *ngIf="registrationForm.get('naturalness').errors?.minlength">
-          Por favor, digite uma naturalidade válida.
-        </mat-error>
-
-      </mat-form-field>
-    </div>
+    <!--Componente de naturalidade-->
+    <app-naturalness></app-naturalness>
 
     <!--Input nacionalidade-->
     <div>

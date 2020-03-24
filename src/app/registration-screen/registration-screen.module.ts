@@ -15,6 +15,7 @@ import { CpfComponent } from '../form-components/cpf/cpf.component';
 import { GendersComponent } from '../form-components/genders/genders.component';
 import { DateOfBirthComponent } from '../form-components/date-of-birth/date-of-birth.component';
 import { EmailComponent } from '../form-components/email/email.component';
+import { NaturalnessComponent } from '../form-components/naturalness/naturalness.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { EmailComponent } from '../form-components/email/email.component';
     CpfComponent,
     GendersComponent,
     DateOfBirthComponent,
-    EmailComponent
+    EmailComponent,
+    NaturalnessComponent
   ],
   imports: [
     BrowserModule,
