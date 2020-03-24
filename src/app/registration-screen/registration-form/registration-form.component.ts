@@ -9,7 +9,6 @@ import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 export class RegistrationFormComponent implements OnInit {
 
   registrationForm: FormGroup;
-  maxDate = new Date();
 
   constructor( private formBuilder: FormBuilder ) { }
 
@@ -17,7 +16,6 @@ export class RegistrationFormComponent implements OnInit {
 
     this.registrationForm = this.formBuilder.group({
       email:        ['', Validators.email ],
-      dateOfBirth:  ['', Validators.required],
       naturalness:  ['', Validators.minLength(2)],
       nationality:  ['', Validators.minLength(2)],
     });

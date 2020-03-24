@@ -1,0 +1,18 @@
+<!--Data de nascimento-->
+<div>
+  <mat-form-field class="registration-form-full-width">
+
+    <mat-label>Data de nascimento</mat-label>
+
+    <input matInput [formControl]="dateOfBirth" [max]="maxDate" [matDatepicker]="picker">
+
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+
+    <mat-datepicker #picker></mat-datepicker>
+
+    <mat-error *ngIf="dateOfBirth.errors?.required">
+      A data de nascimento é <strong>obrigatória</strong>
+    </mat-error>
+
+  </mat-form-field>
+</div>

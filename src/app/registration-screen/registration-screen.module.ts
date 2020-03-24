@@ -13,13 +13,15 @@ import { RegistrationFormComponent } from './registration-form/registration-form
 import { NameComponent } from '../form-components/name/name.component';
 import { CpfComponent } from '../form-components/cpf/cpf.component';
 import { GendersComponent } from '../form-components/genders/genders.component';
+import { DateOfBirthComponent } from '../form-components/date-of-birth/date-of-birth.component';
 
 @NgModule({
   declarations: [
     RegistrationFormComponent,
     NameComponent,
     CpfComponent,
-    GendersComponent
+    GendersComponent,
+    DateOfBirthComponent
   ],
   imports: [
     BrowserModule,

@@ -10,24 +10,8 @@
     <!--Componente de Gêneros-->
     <app-genders></app-genders>
 
-    <!--Data de nascimento-->
-    <div>
-      <mat-form-field class="registration-form-full-width">
-
-        <mat-label>Data de nascimento</mat-label>
-
-        <input matInput formControlName="dateOfBirth" [max]="maxDate" [matDatepicker]="picker">
-
-        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-
-        <mat-datepicker #picker></mat-datepicker>
-
-        <mat-error *ngIf="registrationForm.get('dateOfBirth').errors?.required">
-          A data de nascimento é <strong>obrigatória</strong>
-        </mat-error>
-
-      </mat-form-field>
-    </div>
+    <!--Componente de data de nascimento-->
+    <app-date-of-birth></app-date-of-birth>
 
     <!--Input de e-mail-->
     <div>
