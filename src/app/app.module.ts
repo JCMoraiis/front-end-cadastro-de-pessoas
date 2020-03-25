@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { RegistrationScreenModule } from './registration-screen/registration-screen.module';
 import { NavebarModule } from './navebar/navebar.module';
 import { AppRoutingModule } from './app.routing.module';
+import { UpdateScreenModule } from './update-screen/update-screen.module';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { AppRoutingModule } from './app.routing.module';
     BrowserModule,
     BrowserAnimationsModule,
     RegistrationScreenModule,
+    UpdateScreenModule,
     NavebarModule,
     AppRoutingModule
   ],

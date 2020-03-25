@@ -41,7 +41,14 @@ import { NationalityComponent } from '../form-components/nationality/nationality
     MatButtonModule
   ],
   exports: [
-    RegistrationFormComponent
+    RegistrationFormComponent,
+    NameComponent,
+    CpfComponent,
+    GendersComponent,
+    DateOfBirthComponent,
+    EmailComponent,
+    NaturalnessComponent,
+    NationalityComponent
   ],
   providers: [
     {provide: MAT_DATE_LOCALE, useValue: 'pt'},
