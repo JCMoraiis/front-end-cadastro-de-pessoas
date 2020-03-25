@@ -19,9 +19,9 @@
   margin-top: 6%;
   width: 100%;
   color: white;
-  background-color: rgba(16, 77, 245, 0.822);
+  background-color: rgb(76,175,80);
 }
 
 .mat-button:hover {
-  background-color: rgba(16, 77, 245, 0.9);
+  background-color: rgb(76,175,80,1);
 }
