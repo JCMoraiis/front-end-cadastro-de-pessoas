@@ -7,6 +7,7 @@ import { RegistrationScreenModule } from './registration-screen/registration-scr
 import { NavebarModule } from './navebar/navebar.module';
 import { AppRoutingModule } from './app.routing.module';
 import { UpdateScreenModule } from './update-screen/update-screen.module';
+import { ConsultScreenModule } from './consult-screen/consult-screen.module';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { UpdateScreenModule } from './update-screen/update-screen.module';
     BrowserAnimationsModule,
     RegistrationScreenModule,
     UpdateScreenModule,
+    ConsultScreenModule,
     NavebarModule,
     AppRoutingModule
   ],
