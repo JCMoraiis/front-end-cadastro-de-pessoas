@@ -2,56 +2,24 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
-import { MatInputModule } from '@angular/material/input';
-import { MatOptionModule, MAT_DATE_LOCALE } from '@angular/material/core';
-import { MatSelectModule } from '@angular/material/select';
-import { MatDatepickerModule } from '@angular/material/datepicker';
-import { MatNativeDateModule} from '@angular/material/core';
-import { MatButtonModule } from '@angular/material/button';
 
 import { RegistrationFormComponent } from './registration-form/registration-form.component';
-import { NameComponent } from '../form-components/name/name.component';
-import { CpfComponent } from '../form-components/cpf/cpf.component';
-import { GendersComponent } from '../form-components/genders/genders.component';
-import { DateOfBirthComponent } from '../form-components/date-of-birth/date-of-birth.component';
-import { EmailComponent } from '../form-components/email/email.component';
-import { NaturalnessComponent } from '../form-components/naturalness/naturalness.component';
-import { NationalityComponent } from '../form-components/nationality/nationality.component';
+import { FormComponentsModule } from '../form-components/form-components.module';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
-    RegistrationFormComponent,
-    NameComponent,
-    CpfComponent,
-    GendersComponent,
-    DateOfBirthComponent,
-    EmailComponent,
-    NaturalnessComponent,
-    NationalityComponent
+    RegistrationFormComponent
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     FormsModule,
-    MatInputModule,
-    MatOptionModule,
-    MatSelectModule,
-    MatDatepickerModule,
-    MatNativeDateModule,
+    FormComponentsModule,
     MatButtonModule
   ],
   exports: [
-    RegistrationFormComponent,
-    NameComponent,
-    CpfComponent,
-    GendersComponent,
-    DateOfBirthComponent,
-    EmailComponent,
-    NaturalnessComponent,
-    NationalityComponent
-  ],
-  providers: [
-    {provide: MAT_DATE_LOCALE, useValue: 'pt'},
+    RegistrationFormComponent
   ],
 })
 export class RegistrationScreenModule { }
